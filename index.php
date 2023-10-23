@@ -24,7 +24,7 @@
                         </div>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class=" dropdown-item" href="/templates/userProfile.html">Личные данные</a>
+                                <a class=" dropdown-item" href="/templates/userProfile.php">Личные данные</a>
                             </li>
                             <li>
                                 <a class=" dropdown-item" href="/templates/orderHistory.php">История заказов</a>
