@@ -1,3 +1,8 @@
+
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,11 +21,11 @@
                 <a class="navbar-brand navbar-text" href="#">
                     <h3 class="text-dark">AniBox</h3>
                 </a>
-                <?php if (true) : ?>
+                <?php if (isset($_SESSION['userid'])) : ?>
 
                     <div class="dropdown">
                         <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                            <img class="rounded-circle" src="t.jpg" width="48" height="48" alt="avatar">
+                            <img class="rounded-circle" src="../assets/img/t.jpg" width="48" height="48" alt="avatar">
                         </div>
                         <ul class="dropdown-menu">
                             <li>
@@ -32,12 +37,15 @@
                             <li>
                                 <a class=" dropdown-item" href="/templates/card.php">Корзина</a>
                             </li>
+                            <li>
+                                <a class=" dropdown-item" href="scripts/logout.php">Выйти</a>
+                            </li>
                         </ul>
                     </div>
                 <?php else : ?>
                     <div class="nav-item">
-                        <a class="nav-link" href="#">Вход</a>
-                        <a class="nav-link" href="templates/registration.html">Регистрация</a>
+                        <a class="nav-link" href="templates/auth.php">Вход</a>
+                        <a class="nav-link" href="templates/registration.php">Регистрация</a>
                     </div>
                 <?php endif ?>
             </div>
@@ -49,7 +57,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4">                    
-                        <img src="item1.png" data-bs-toggle="modal" data-bs-target="#productModal1" class="card-img-top" width="200" height="500" alt="Товар 1">
+                        <img src="../assets/img/item1.png" data-bs-toggle="modal" data-bs-target="#productModal1" class="card-img-top" width="200" height="500" alt="Товар 1">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Манга "Доктор Стоун"</h5>
@@ -61,7 +69,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img src="item2.png" data-bs-toggle="modal" data-bs-target="#productModal1" class="card-img-top" width="200" height="500" alt="Товар 2">
+                        <img src="../assets/img/item2.png" data-bs-toggle="modal" data-bs-target="#productModal1" class="card-img-top" width="200" height="500" alt="Товар 2">
                         <div class="card-body">
                             <h5 class="card-title">Фигурка "Доктор Стоун"</h5>
                             <p class="card-text">Аниме фигурка</p>
@@ -72,7 +80,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img src="item3.jpg" data-bs-toggle="modal" data-bs-target="#productModal1" class="card-img-top" width="200" height="500" alt="Товар 3">
+                        <img src="../assets/img/item3.jpg" data-bs-toggle="modal" data-bs-target="#productModal1" class="card-img-top" width="200" height="500" alt="Товар 3">
                         <div class="card-body">
                             <h5 class="card-title">Кружка "Дoктор Стоун"</h5>
                             <p class="card-text">Аниме кружка.</p>
@@ -96,7 +104,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="item1.png" class="img-fluid" alt="Товар 1">
+                    <img src="../assets/img/item1.png" class="img-fluid" alt="Товар 1">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, quisquam sapiente repellat voluptatem, nobis delectus, laboriosam earum repellendus natus dolorum quam corporis fugit non quas excepturi. Neque voluptatum accusamus non.</p>
                     <p>$10.00</p>
                 </div>

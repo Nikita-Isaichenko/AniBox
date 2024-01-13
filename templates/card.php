@@ -43,7 +43,7 @@
                         <h5 class="card-title">Товары в корзине</h5>
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <img src="/item1.png" width="64" height="64" alt="">
+                                <img src="../assets/img/item1.png" width="64" height="64" alt="">
                                 Товар 1
                                 <span class="badge bg-primary">$10.00</span>
                                 <button class="btn float-end">
@@ -53,7 +53,7 @@
                                 </button>
                             </li>
                             <li class="list-group-item">
-                                <img src="/item2.png" width="64" height="64" alt="">
+                                <img src="../assets/img/item2.png" width="64" height="64" alt="">
                                 Товар 2
                                 <span class="badge bg-primary">$15.00</span>
                                 <button class="btn float-end" role="button">
@@ -63,7 +63,7 @@
                                 </button>
                             </li>
                             <li class="list-group-item">
-                            <img src="/item3.png" width="64" height="64" alt="">
+                            <img src="../assets/img/item3.png" width="64" height="64" alt="">
                                 Товар 3
                                 <span class="badge bg-primary">$20.00</span>
                                 <button class="btn float-end">
