@@ -15,7 +15,7 @@
                 </a>
                 <div class="dropdown">
                     <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                        <img class="rounded-circle" src="/t.jpg" width="48" height="48" alt="avatar">
+                        <img class="rounded-circle" src="../assets/img/t.jpg" width="48" height="48" alt="avatar">
                     </div>
                     <ul class="dropdown-menu">
                         <li>
@@ -40,7 +40,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Ваши данные:</h5>
                     <div class="mb-3">
-                        <img src="/t.jpg" width="100" height="100" alt="avatar">
+                        <img src="../assets/img/t.jpg" width="100" height="100" alt="avatar">
 
                     </div>
                     <div class="mb-3">
